@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net472;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <OutputPath>build\</OutputPath>
+    <NuspecFile>GR.NuGetPackageChecker.nuspec</NuspecFile>
+    <PackageId>GR.NuGetPackageChecker</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.7" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+    <PackageReference Include="NuGet.Versioning" Version="5.6.0" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="5.6.0" PrivateAssets="All" /> <!--Part of the SDK-->
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.1'">
+    <PackageReference Include="NuGet.Versioning" Version="5.8.0" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="5.8.0" PrivateAssets="All" /> <!--Part of the SDK-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="build\GR.NuGetPackageChecker.targets" />
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Include="build\GR.NuGetPackageChecker.targets" />
+  </ItemGroup>
+  
+  <!-- Required so that $version$ is set when we call the Pack target -->
+  <Target Name="SetNuspecPackageVersion" DependsOnTargets="GetBuildVersion" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
+      <NuspecProperties>$(NuspecProperties);version=$(NuGetPackageVersion)</NuspecProperties>
+    </PropertyGroup>
+  </Target>
+</Project>

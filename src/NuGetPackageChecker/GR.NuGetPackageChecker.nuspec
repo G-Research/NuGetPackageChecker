@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>GR.NuGetPackageChecker</id>
+    <version>$Version$</version>
+    <authors>G-Research</authors>
+    <owners>G-Research</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Build only dependency package to validate NuGet package versions and references in project files</description>
+    <developmentDependency>true</developmentDependency>
+  </metadata>
+  <files>
+    <file src="build\GR.NuGetPackageChecker.targets" target="build" />
+    <file src="build\net5.0\*.*" target="build/net5.0" />
+    <file src="build\netcoreapp3.1\*.*" target="build/netcoreapp3.1" />
+    <file src="build\net472\*.*" target="build/net472" />
+  </files>
+</package>

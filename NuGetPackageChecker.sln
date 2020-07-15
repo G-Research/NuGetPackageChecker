@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3B69C3D9-823B-46A9-BD59-D86852DC2D70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGetPackageChecker", "src\NuGetPackageChecker\NuGetPackageChecker.csproj", "{4474FC0C-E017-4E46-8E48-04B69D70D475}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5C4F9EFA-93E1-4F7F-A766-BE25217AFF44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NuGetPackageChecker.Tests", "tests\NuGetPackageChecker.Tests\NuGetPackageChecker.Tests.csproj", "{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3EBF8687-7C6A-4EF7-9451-324319B3E5C9}"
+	ProjectSection(SolutionItems) = preProject
+		build.py = build.py
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		NonTestProject.targets = NonTestProject.targets
+		README.md = README.md
+		version.json = version.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4474FC0C-E017-4E46-8E48-04B69D70D475}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4474FC0C-E017-4E46-8E48-04B69D70D475}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4474FC0C-E017-4E46-8E48-04B69D70D475}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4474FC0C-E017-4E46-8E48-04B69D70D475}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4474FC0C-E017-4E46-8E48-04B69D70D475} = {3B69C3D9-823B-46A9-BD59-D86852DC2D70}
+		{E6479D96-C697-4D6C-8EE4-7F00EAD24F2C} = {5C4F9EFA-93E1-4F7F-A766-BE25217AFF44}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF98440C-9CC3-47B1-9E03-D6765EB7B930}
+	EndGlobalSection
+EndGlobal

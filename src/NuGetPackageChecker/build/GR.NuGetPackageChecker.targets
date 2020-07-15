@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <PropertyGroup>
+    <Configuration Condition="'$(Configuration)' == ''">Debug</Configuration>
+    <TaskFolder Condition=" '$(MSBuildRuntimeType)' != 'Core' ">net472</TaskFolder>
+    <TaskFolder Condition=" '$(MSBuildRuntimeType)' == 'Core' ">netcoreapp3.1</TaskFolder>
+    <TaskFolder Condition=" '$(MSBuildRuntimeType)' == 'Core' AND $([MSBuild]::VersionGreaterThanOrEquals('$(NETCoreSdkVersion)', '5.0.000'))">net5.0</TaskFolder>
+    <NugetPackageCheckerAssemblyPath>$(MSBuildThisFileDirectory)$(TaskFolder)\NuGetPackageChecker.dll</NugetPackageCheckerAssemblyPath>
+  </PropertyGroup>
+
+  <UsingTask TaskName="PackageReferenceValidator" AssemblyFile="$(NugetPackageCheckerAssemblyPath)" />
+
+  <Target Name="ValidatePackageReferences" AfterTargets="BeforeCompile" >
+
+    <Message Text="Validating Package References for : [$(MSBuildProjectFullPath)]. TargetFramework = '$(TargetFramework)'. ForbiddenPackages= '@(ForbiddenPackages)'. RequiredPackages = '@(RequiredPackages)'" Importance="Normal" />
+
+    <PackageReferenceValidator ProjectFile="$(MSBuildProjectFullPath)" RequiredPackages="@(RequiredPackages)" ForbiddenPackages="@(ForbiddenPackages)" ProjectAssetsFile="$(ProjectAssetsFile)" TargetFramework="$(TargetFramework)" />
+  </Target>
+
+</Project>

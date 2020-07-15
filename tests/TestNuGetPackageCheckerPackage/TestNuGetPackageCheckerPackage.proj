@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.Build.NoTargets/1.0.40">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.1</TargetFrameworks>
+  </PropertyGroup>
+  
+  <Target Name="TestPackageReferenceDotNetBuild" DependsOnTargets="GetBuildVersion" AfterTargets="Build" Condition="'$(MSBuildRuntimeType)' == 'Core'">
+
+    <Message Text="NuGetPackageRoot='$(NuGetPackageRoot)'" Importance="High" />
+
+    <RemoveDir Directories="$(MSBuildThisFileDirectory)bin" />
+
+    <Message Text="NuGetPackageRoot='$(NuGetPackageRoot)'" Importance="High" />
+
+    <!-- Delete old version of the package -->
+    <RemoveDir Directories="$(NuGetPackageRoot)/gr.nugetpackagechecker" />
+
+    <Message Text="Building via dotnet build and about to build TestNuGetPackageCheckerPackage.csproj using NuGetPackageCheckerNuGetVersion=$(Version) GenerateBuildFailure=$(GenerateBuildFailure) GenerateForbiddenPackageBuildFailure=$(GenerateForbiddenPackageBuildFailure)" Importance="High" />
+
+    <Exec Command="dotnet build /p:NuGetPackageCheckerPackageVersion=$(Version) .\TestNuGetPackageCheckerPackage.csproj /p:GenerateBuildFailure=$(GenerateBuildFailure) /p:GenerateForbiddenPackageBuildFailure=$(GenerateForbiddenPackageBuildFailure)" />
+  </Target>
+
+  <Target Name="TestPackageReferenceMsBuild" DependsOnTargets="GetBuildVersion" AfterTargets="Build" Condition="'$(MSBuildRuntimeType)' != 'Core'">
+
+    <Message Text="Building via MSBuild and about to build TestNuGetPackageCheckerPackage.csproj using NuGetPackageCheckerNuGetVersion=$(Version) GenerateBuildFailure=$(GenerateBuildFailure)" Importance="High" />
+
+    <MsBuild Projects="TestNuGetPackageCheckerPackage.csproj" Targets="Build" />
+
+  </Target>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.NoTargets" Version="1.0.40" />
+  </ItemGroup>
+
+</Project>
