@@ -1,3 +1,0 @@
-<Project>
-    <Import Project="$(MSBuildThisFileDirectory)/NonTestProject.targets" Condition="'$(IsTestProject)' != 'true'" />
-</Project>
