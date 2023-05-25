@@ -6,6 +6,17 @@
     <OutputPath>build\</OutputPath>
     <NuspecFile>NuGetPackageChecker.nuspec</NuspecFile>
     <PackageId>NuGetPackageChecker</PackageId>
+	<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	<EnableNETAnalyzers>true</EnableNETAnalyzers>
+	<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+	<PackageReleaseNotes>https://github.com/G-Research/NuGetPackageChecker/blob/main/CHANGELOG.md</PackageReleaseNotes>
+	<PackageProjectUrl>https://github.com/G-Research/NuGetPackageChecker</PackageProjectUrl>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	<PublishRepositoryUrl>true</PublishRepositoryUrl>
+	<Authors>G-Research</Authors>
+	<Copyright>Copyright 2020-$([System.DateTime]::Now.ToString('yyyy')) G-Research Limited</Copyright>
+	<AssemblyTitle>NuGetPackageChecker</AssemblyTitle>
+	<AssemblyProduct>NuGetPackageChecker</AssemblyProduct>
   </PropertyGroup>
 
   <ItemGroup>
