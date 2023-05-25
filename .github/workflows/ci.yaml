@@ -52,7 +52,7 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Build
-        run: dotnet build --configuration=Release
+        run: dotnet pack --configuration=Release
       - name: Upload NuGet package artifacts
         uses: actions/upload-artifact@v3
         with:
