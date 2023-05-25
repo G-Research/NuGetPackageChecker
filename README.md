@@ -6,7 +6,7 @@ An MSBuild extension to check for required packages and versions Classifications
 
 ## How does it work?
 
-Validates NuGet pacakge references and versions for projects in the footprint. This works by adding an additional .targets file to the build process which checks the contents of package references.
+Validates NuGet package references and versions for projects in the footprint. This works by adding an additional .targets file to the build process which checks the contents of package references.
 
 Warnings and errors are written to the standard build output and any validation failures will fail the build.
 
@@ -32,7 +32,7 @@ Add a reference to the nuget package which will add a build only dependency to y
 </Project>
 ```
 
-To automatically import the nuget pacakge into all projects.
+To automatically import the nuget package into all projects.
 
 Required or forbidden package references are configured using item groups which can be also be added to the Directory.Build.props files but can be updated/overridden as required.
 
