@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
-    <id>GR.NuGetPackageChecker</id>
+    <id>NuGetPackageChecker</id>
     <version>$Version$</version>
     <authors>G-Research</authors>
     <owners>G-Research</owners>
@@ -10,7 +10,7 @@
     <developmentDependency>true</developmentDependency>
   </metadata>
   <files>
-    <file src="build\GR.NuGetPackageChecker.targets" target="build" />
+    <file src="build\NuGetPackageChecker.targets" target="build" />
     <file src="build\net5.0\*.*" target="build/net5.0" />
     <file src="build\netcoreapp3.1\*.*" target="build/netcoreapp3.1" />
     <file src="build\net472\*.*" target="build/net472" />

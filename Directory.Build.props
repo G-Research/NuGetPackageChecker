@@ -5,7 +5,6 @@
     <PathMap>$(MSBuildThisFileDirectory)=E:\code\NuGetPackageChecker</PathMap>
     <PackageOutputPath>$(MSBuildThisFileDirectory)artefacts</PackageOutputPath>
     <ApplicationIcon>$(MSBuildThisFileDirectory)Monitor.ico</ApplicationIcon>
-    <DestinationNuGetRepo>gr-dev-extractor-nuget</DestinationNuGetRepo>
     <PackageIcon>Monitor.png</PackageIcon>
   </PropertyGroup>
 
