@@ -2,7 +2,7 @@
 
 <img src="./Monitor.png" width="300px" />
 
-An MSBuild extension to check for required packages and versions Classifications: BRONZE, HIGH
+An MSBuild extension to check for required packages and versions.
 
 ## How does it work?
 
