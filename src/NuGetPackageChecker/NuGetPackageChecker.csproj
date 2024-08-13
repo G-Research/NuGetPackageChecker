@@ -24,12 +24,12 @@
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
     <PackageReference Include="NuGet.Versioning" Version="6.10.2" PrivateAssets="All" /> <!--Part of the SDK-->
-    <PackageReference Include="NuGet.ProjectModel" Version="6.9.1" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="6.10.2" PrivateAssets="All" /> <!--Part of the SDK-->
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.1'">
     <PackageReference Include="NuGet.Versioning" Version="6.10.2" PrivateAssets="All" /> <!--Part of the SDK-->
-    <PackageReference Include="NuGet.ProjectModel" Version="6.9.1" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="6.10.2" PrivateAssets="All" /> <!--Part of the SDK-->
   </ItemGroup>
 
   <ItemGroup>
