@@ -44,3 +44,7 @@ Required or forbidden package references are configured using item groups which 
   </ItemGroup>
 </Project>
 ```
+
+## Security
+
+Please see our [security policy](https://github.com/G-Research/NuGetPackageChecker/blob/main/SECURITY.md) for details on reporting security vulnerabilities.
