@@ -68,3 +68,14 @@ If you encounter any issues or bugs, please report them via the [GitHub Issues](
 - Expected behavior.
 - Actual behavior.
 - Relevant logs or screenshots.
+
+## CI/CD Status
+
+![Build Status](https://github.com/G-Research/NuGetPackageChecker/actions/workflows/ci.yaml/badge.svg)
+
+For more details, check out the [GitHub Actions](https://github.com/G-Research/NuGetPackageChecker/actions) page.
+
+---
+
+Thank you for using and contributing to NuGetPackageChecker!
+
