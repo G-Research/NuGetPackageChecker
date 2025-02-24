@@ -61,3 +61,10 @@ We welcome contributions! To get started:
 
 Please follow our [contributing guidelines](https://github.com/G-Research/NuGetPackageChecker/blob/main/CONTRIBUTING.md) for more details.
 
+## Issue Reporting
+
+If you encounter any issues or bugs, please report them via the [GitHub Issues](https://github.com/G-Research/NuGetPackageChecker/issues) page. Provide as much detail as possible, including:
+- Steps to reproduce the issue.
+- Expected behavior.
+- Actual behavior.
+- Relevant logs or screenshots.
