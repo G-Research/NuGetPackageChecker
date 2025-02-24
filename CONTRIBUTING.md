@@ -97,6 +97,7 @@ Want to be more involved?
 - Help review and triage issues.
 - Assist new contributors by answering questions.
 - Share your experience using NuGetPackageChecker.
+- Contact the maintainers to discuss the project.
 
 Thank you for helping make this project better! 
 
