@@ -17,9 +17,9 @@ All contributions are encouraged and valued. Please read the [Table of Contents]
 
 This project and everyone participating in it is governed by the [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
 
-## How to Contribute
+## Issues
 
-### Reporting Issues
+Please raise bug reports and feature requests as Issues on [the GitHub project](https://github.com/G-Research/NuGetPackageChecker/issues).
 
 If you find a bug or a potential issue:
 
@@ -32,20 +32,18 @@ If you find a bug or a potential issue:
    - Relevant logs, error messages, or screenshots.
    - Your environment details (OS, .NET version, NuGet version, etc.).
 
-### Suggesting Enhancements
+## Pull Requests
 
-To propose a new feature or improvement:
+Before embarking on a large change, we strongly recommend checking via a GitHub Issue first to confirm whether we are likely to accept it.
 
-1. Review the [existing discussions and issues](https://github.com/G-Research/NuGetPackageChecker/issues) to check if the idea has been discussed.
-2. If not, [open a feature request](https://github.com/G-Research/NuGetPackageChecker/issues/new?labels=enhancement) and include:
-   - A clear and descriptive title.
-   - The problem your suggestion solves.
-   - Any potential alternatives or workarounds.
-   - Why this enhancement would be beneficial.
+You may find that the following guidelines will help you produce a change that we accept:
+
+* Keep your change as small and focused as practical.
+* Ensure that your change is thoroughly tested.
+* Document any choices you make that are not immediately obvious.
+* Explain why your change is necessary or desirable.
 
 ### Submitting a Pull Request
-
-> **Legal Notice:** By contributing to this project, you agree that you have authored 100% of the content, have the necessary rights to it, and that your contributions may be provided under the project's license.
 
 #### Steps to Submit a PR
 
@@ -93,5 +91,5 @@ Want to be more involved?
 - Share your experience using NuGetPackageChecker.
 - Contact the maintainers to discuss the project.
 
-Thank you for helping make this project better! 
+Thank you for helping make this project better!
 
