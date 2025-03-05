@@ -51,15 +51,7 @@ Please see our [security policy](https://github.com/G-Research/NuGetPackageCheck
 
 ## Contributing
 
-We welcome contributions! To get started:
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -m 'Add new feature'`).
-4. Push the branch (`git push origin feature-branch`).
-5. Open a pull request.
-
-Please follow our [contributing guidelines](https://github.com/G-Research/NuGetPackageChecker/blob/main/CONTRIBUTING.md) for more details.
+We welcome contributions! To get started, read the [CONTRIBUTING.md](CONTRIBUTING.md) and the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) files to see how best to contribute to the project.
 
 ## Issue Reporting
 
@@ -75,7 +67,9 @@ If you encounter any issues or bugs, please report them via the [GitHub Issues](
 
 For more details, check out the [GitHub Actions](https://github.com/G-Research/NuGetPackageChecker/actions) page.
 
----
+## License
+
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 Thank you for using and contributing to NuGetPackageChecker!
 
