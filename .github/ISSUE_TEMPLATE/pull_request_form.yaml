@@ -1,0 +1,49 @@
+name: Pull Request Template
+description: Standardized template for pull requests.
+title: "[PR]: <Summary of item>"
+labels: ["pr"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pull Request Checklist
+        Please ensure the following before submitting your PR:
+  
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a brief description of the changes in this PR.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: issue
+    attributes:
+      label: Related Issues
+      description: Link to related issues, if applicable.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: PR template is created and follows project conventions
+          required: true
+        - label: Code follows the project's coding guidelines
+          required: true
+        - label: Tests have been added/updated if necessary
+          required: true
+        - label: Documentation has been updated if needed
+          required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any additional context or screenshots if applicable.
+    validations:
+      required: false
