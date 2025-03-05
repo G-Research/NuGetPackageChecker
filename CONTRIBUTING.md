@@ -1,6 +1,6 @@
 # Contributing to NuGetPackageChecker
 
-All contributions are encouraged and valued. Please read the [Table of Contents](#table-of-contents) before contributing to help maintainers and improve the experience for everyone. The community looks forward to your contributions.
+All contributions are encouraged and valued. Please read the [Code of Conduct](#code-of-conduct) in addition   to this contributing guide to help maintainers and improve the experience for everyone. The community looks forward to your contributions.
 
 ## Table of Contents
 
