@@ -1,5 +1,7 @@
 # NuGetPackageChecker
 
+![Build Status](https://github.com/G-Research/NuGetPackageChecker/actions/workflows/ci.yaml/badge.svg)
+
 <img src="./Monitor.png" width="300px" />
 
 An MSBuild extension to check for required packages and versions.
@@ -60,12 +62,6 @@ If you encounter any issues or bugs, please report them via the [GitHub Issues](
 - Expected behavior.
 - Actual behavior.
 - Relevant logs or screenshots.
-
-## CI/CD Status
-
-![Build Status](https://github.com/G-Research/NuGetPackageChecker/actions/workflows/ci.yaml/badge.svg)
-
-For more details, check out the [GitHub Actions](https://github.com/G-Research/NuGetPackageChecker/actions) page.
 
 ## License
 
