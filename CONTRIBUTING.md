@@ -5,10 +5,8 @@ All contributions are encouraged and valued. Please read the [Table of Contents]
 ## Table of Contents
 
 - [Code of Conduct](#code-of-conduct)
-- [How to Contribute](#how-to-contribute)
-  - [Reporting Issues](#reporting-issues)
-  - [Suggesting Enhancements](#suggesting-enhancements)
-  - [Submitting a Pull Request](#submitting-a-pull-request)
+- [Issues](#issues)
+- [Pull Requests](#pull-requests)
 - [Coding Guidelines](#coding-guidelines)
 - [Commit Messages](#commit-messages)
 - [Community Involvement](#community-involvement)
