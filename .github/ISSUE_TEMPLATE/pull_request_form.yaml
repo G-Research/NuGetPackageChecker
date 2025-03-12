@@ -1,0 +1,56 @@
+name: Pull Request Template
+description: Standardized template for pull requests.
+title: "[PR]: <Summary of item>"
+labels: ["pr"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Pull Request Checklist
+        Please ensure the following before submitting your PR:
+        - [ ] Tests have been added/updated and pass successfully
+        - [ ] Documentation has been updated if needed
+        - [ ] Code follows project coding guidelines
+        - [ ] Commit messages follow the project guidelines
+        
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a brief description of the changes in this PR.
+      placeholder: What does this PR do? What problem does it solve?
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: type-of-change
+    attributes:
+      label: Type of Change
+      description: What type of change does this PR introduce?
+      options:
+        - Bug fix
+        - New feature
+        - Documentation update
+        - Performance improvement
+        - Code refactoring
+        - Other
+    validations:
+      required: true
+  
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing Done
+      description: Describe the testing you've performed to validate your changes
+      placeholder: Include test cases, scenarios, and any manual testing performed
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information
+      description: Provide any additional context, screenshots, or notes if applicable.
+    validations:
+      required: false
