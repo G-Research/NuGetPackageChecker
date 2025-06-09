@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>net472;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
@@ -23,13 +23,13 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
-    <PackageReference Include="NuGet.Versioning" Version="6.12.1" PrivateAssets="All" /> <!--Part of the SDK-->
-    <PackageReference Include="NuGet.ProjectModel" Version="6.12.1" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.Versioning" Version="6.14.0" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="6.14.0" PrivateAssets="All" /> <!--Part of the SDK-->
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' != 'netcoreapp3.1'">
-    <PackageReference Include="NuGet.Versioning" Version="6.12.1" PrivateAssets="All" /> <!--Part of the SDK-->
-    <PackageReference Include="NuGet.ProjectModel" Version="6.12.1" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.Versioning" Version="6.14.0" PrivateAssets="All" /> <!--Part of the SDK-->
+    <PackageReference Include="NuGet.ProjectModel" Version="6.14.0" PrivateAssets="All" /> <!--Part of the SDK-->
   </ItemGroup>
 
   <ItemGroup>
